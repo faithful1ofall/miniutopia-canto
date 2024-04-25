@@ -30,21 +30,11 @@ module.exports = {
       }
     }
   },
-  etherscan: {
-    apiKey: {
-      sepolia: "JU87Q3CYXCBERPAGB2MDE9D67JZPVV27S7",
-      tCANTO: "abc",
-    },
-    customChains: [
-      {
-        network: "tCANTO",
-        chainId: 7701,
-        urls: {
-          apiURL: "https://testnet.tuber.build/api/eth-rpc",
-          browserURL: " https://testnet.tuber.build",
-        },
-      },
-    ],
-
-  },
+  sourcify: {
+    enabled: true,
+    // Optional: specify a different Sourcify server
+    apiUrl: "https://sourcify.dev/server",
+    // Optional: specify a different Sourcify repository
+    browserUrl: "https://repo.sourcify.dev",
+  }
 };
