@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";
 import Confetti from "react-confetti";
-import { create as ipfsHttpClient } from "ipfs-http-client";
+// import { create as ipfsHttpClient } from "ipfs-http-client";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
@@ -41,7 +41,7 @@ const MintNft = () => {
     const response = await fetch(
       "https://api.pinata.cloud/pinning/pinFileToIPFS",
       {
-        method: "post",
+        method: "POST",
         headers: {
           Authorization: `Bearer ${projectId}`,
         },
