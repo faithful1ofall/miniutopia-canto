@@ -12,7 +12,6 @@ module.exports = {
     tCANTO: {
       url: "https://canto-testnet.plexnode.wtf",
       chainId: 7701,
-      gasPrice: 20000000000,
       accounts: [privateKey]
     },
     sepolia: {
