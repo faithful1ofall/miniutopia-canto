@@ -9,9 +9,9 @@ const { privateKey } = require('./secrets.json');
 
 module.exports = {
   networks: {
-    tPLQ: {
-      url: "https://evm-rpc-atlas.planq.network",
-      chainId: 7077,
+    tCANTO: {
+      url: "https://canto-testnet.plexnode.wtf",
+      chainId: 7701,
       gasPrice: 20000000000,
       accounts: [privateKey]
     },
@@ -34,15 +34,15 @@ module.exports = {
   etherscan: {
     apiKey: {
       sepolia: "JU87Q3CYXCBERPAGB2MDE9D67JZPVV27S7",
-      tPLQ: "abc",
+      tCANTO: "abc",
     },
     customChains: [
       {
-        network: "tPLQ",
-        chainId: 7077,
+        network: "tCANTO",
+        chainId: 7701,
         urls: {
-          apiURL: "https://testnet-explorer.konsortech.xyz/planq/api",
-          browserURL: "https://testnet-explorer.konsortech.xyz/planq",
+          apiURL: "https://testnet.tuber.build/api/eth-rpc",
+          browserURL: " https://testnet.tuber.build",
         },
       },
     ],
