@@ -25,7 +25,7 @@ const MintNft = () => {
   const [mintStage, setMintStage] = useState(-1);
   const [errorStage, setErrorStage] = useState(-1);
   const [fileUrl, setFileUrl] = useState(null);
-  const [fetch, setFetch] = useState(true);
+  const [ffetch, setFetch] = useState(true);
   const [formInput, updateFormInput] = useState({
     price: "",
     name: "",
@@ -201,7 +201,7 @@ const MintNft = () => {
     </div>
   );
 
-  if (fetch) {
+  if (ffetch) {
     return (
       <div className="flexStart min-h-screen">
         <Loader />
